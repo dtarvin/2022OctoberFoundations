@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: x-large; /* 24px */
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+nav {
+    background-color: white;
+    padding: 0.25em;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#home {
+    background-image: url("../images/5570863.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.title {
+    font-size: 3em;
+    line-height: .9;
+}
+
+.hero {
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    animation-name: fadeInRight;
+    animation-duration: 3s;
+}
+
+/* #text-spread {
+    letter-spacing: 3px;
+} */
+
+.tagline {
+    margin-top: 5px;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
